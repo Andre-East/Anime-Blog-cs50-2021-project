@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Account
+{% endblock %}
+
+{% block main %}
+    <div class = "account_box1">
+        <div class = "account_box2">
+            <h3 class="form_title">Account Details</h3>
+            <form action= "/account" method= "post">
+                <table class="account_form">
+                    <tbody>
+                        <tr>
+                            <td class="col1"><lable>Username:</lable></td>
+                            <td class="col2"><input  class="a_input" name ="user_n" placeholder= "{{user["username"]}}"  type="text"></td>
+                        </tr>
+                        <tr>
+                            <td class="col1"><lable>First Name:</lable></td>
+                            <td class="col2"><input autocomplete= "off" class="a_input" name ="fname" placeholder= "{{user["f_name"]}}" type="text"></td>
+                        </tr>
+                        <tr>
+                            <td class="col1" ><lable>Last Name:</lable></td>
+                            <td class="col2" ><input autocomplete= "off" class="a_input" name ="lname" placeholder= "{{user["l_name"]}}" type="text"></td>
+                        </tr>
+                        <tr>
+                            <td class="col1"><lable>Date of Birth:</lable></td>
+                            <td class="col2"><input autocomplete= "off" class="a_input" name ="dateofbirth" placeholder= "{{user["dob"]}}" type="text"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><button class="btn btn-primary" type="submit">Update</button></td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+            <a href="/password"><button class="btn btn-primary">Change Password</button></a>
+        </div>
+    </div>
+
+{% endblock %}

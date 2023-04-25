@@ -1,0 +1,89 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Anime Listing
+{% endblock %}
+
+{% block main %}
+    <div class ="search" >
+        <dive class = "a_sbar">
+            <form action = "/" method = "post">
+                <label for="anime_search"><h3>Anime Serach:</h3></label>
+                <input autocomplete = "off" autofocus ="off" class ="a_search" name ="anime_search" type = "text">
+                <button class="btn btn-primary" type="submit">Search</button>
+            </form>
+        </dive>
+    </div>
+    <div class ="anime_list">
+        <table>
+            <tbody>
+                <div class ="current_anime">
+                    {% for animes_details in anime_details %}
+                        <div class = "anime">
+                            <tr>
+                                <td>
+                                    <div class = "image">
+                                        {% if anime_details["pic"] is not none %}
+                                            <img src ="{{animes_details["pic"]}}" alt = "anime_poster" class = "poster">
+                                        {% else %}
+                                            <h6>No poster has been made available</h6>
+                                        {% endif %}
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class = "title">
+                                        <h6>Title: {{animes_details["title"]}}</h6>
+                                    </div>
+                                    <div class= "plot">
+                                        {% if animes_details["plot"] is not none %}
+                                            <h6>Plot:  {{animes_details["plot"]}} </h6>
+                                        {% else %}
+                                            <h6>Plot: No synopsis has been made available</h6>
+                                        {% endif %}
+                                    </div>
+                                </td>
+                            </tr>
+                        </div>
+                    {% endfor %}
+                </div>
+            </tbody>
+        </table>
+    </div>
+
+    <div class ="chat">
+        <div class = "chat_body">
+            <table class="outer_table">
+                <tbody>
+                   <tr>
+                       <td colspan="2"><h3>Live Open Chat</h3></td>
+                   </tr>
+                   <tr class="scrolling_chat">
+                       <td>
+                           <div class ="chat_scroll">
+                               <table class="inner_table">
+                                   <tbody>
+                                       {% for chat in chats %}
+                                           <tr>
+                                               <td class="col1">{{chat["username"]}} |</td>
+                                               <td class="col2">{{chat["comment"]}}</td>
+                                            </tr>
+                                       {% endfor %}
+                                   </tbody>
+                               </table>
+                           </div>
+                       </td>
+                   </tr>
+                   <tr>
+                       <td colspan ="2">
+                           <form action = "/chat" method = "post">
+                               <label for="anime_search"><h3>Comment:</h3></label>
+                               <input autocomplete = "off" autofocus ="off" class ="chat_input" name ="chats" type = "text">
+                               <button class="btn btn-primary" type="submit">Post</button>
+                            </form>
+                        </td>
+                   </tr>
+                </tbody>
+            </table>
+         </div>
+    </div>
+{% endblock %}

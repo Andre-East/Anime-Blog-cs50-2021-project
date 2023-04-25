@@ -1,0 +1,416 @@
+/*stylin for text font used in nav bar*/
+nav .navbar-brand
+{
+    font-size: xx-large;
+}
+
+/*styling for text in navbar logo*/
+nav .navbar-brand .logo
+{
+    color: #c90c2f;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 2px 2px #ff4b58;
+}
+
+/*styling for image used */
+nav .a_logo
+{
+    height:70%;
+    width: 40px;
+}
+
+/*styling for form input text-boxes on registration template*/
+main .form-control
+{
+    display: inline-block;
+    width: auto;
+}
+
+/*styling for buttons for webapp */
+main button
+{
+    background-color:#ff4b58;
+    height: 35px;
+}
+
+/*styling for templates withing the layout html*/
+main
+{
+    overflow-x: auto;
+    text-align: center;
+}
+
+/*styling for image on login page*/
+main img
+{
+    max-width: 100%;
+}
+
+/*styling for titles in webapp*/
+main h3
+{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*styling to center tables in webapp */
+main table
+{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*styling to position the image on the login page  */
+main .left_h
+{
+    float: left;
+    width: 60%;
+    height: 500px;
+}
+
+/*styling to position the login form on the login page*/
+main .right_h
+{
+    float: right;
+    height: 400px;
+    width: 40%;
+    padding-top: 6%;
+    border-left-style: inset;
+    border-left-color: black;
+    border-left-width: 4px;
+}
+
+/*styling for the div that contains the login form*/
+main .loginf
+{
+    width: 60;
+}
+
+/*styling for the left section of the login page*/
+main .holder
+{
+    display: block;
+}
+
+/*styling for the text under the image on the left section of the login page*/
+main .holder h5
+{
+    padding-top: 10px;
+    text-shadow: 4px 4px 20px #686868,-3px 2px 30px #686868;
+
+}
+
+
+/*styling for the image on the login page*/
+main .img_home
+{
+   text-align: center;
+   height: 50%;
+   width:90%;
+   box-shadow: 10px 10px 5px #686868;
+}
+
+/*styling for div that contains link for registration page*/
+main .reg
+{
+    padding-top: 4%;
+    text-align:center;
+}
+
+/*styling for registration form*/
+main .reg_f_center
+{
+    display:block;
+    width:100%;
+    height: 500px;
+}
+
+/*styling for registration form*/
+main .reg_form
+{
+    display: block;
+    margin-right:auto;
+    margin-left:auto;
+    background-color: #f2f2f2;
+    box-shadow: 0 0 10px 0 #999;
+    width: 60%;
+    padding-top:15px;
+
+}
+
+/*styling for div that contains the anime lookup*/
+main .search
+{
+    display: block;
+    margin-right:auto;
+    margin-left:auto;
+    height: 100px;
+    width: 100%;
+}
+
+
+/*styling for anime lookup text-box input*/
+main .a_search
+{
+    height: 35px;
+}
+
+/*styling for anime details results container gathered from api */
+main .anime_list
+{
+    margin-right:auto;
+    margin-left:auto;
+    width: 100%;
+}
+
+/*styling for container for anime lookup second layer container */
+main .a_sbar
+{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/*styling for individual anime container */
+main .current_anime
+{
+    height: 100%;
+}
+
+/*styling for anime poster conatiner*/
+main .image
+{
+    height: 300px;
+    width: 250px;
+}
+
+/*styling for anime poster image*/
+main .poster
+{
+    height: 100%;
+    width: 100%;
+}
+
+/*styling for anime title */
+main .title
+{
+    text-align: left;
+    padding-bottom: 0.90rem;
+    padding-left:20px;
+    padding-right:20px;
+}
+
+/*styling for anime summery/plot*/
+main .plot
+{
+    text-align: left;
+    padding-bottom: 1rem;
+    padding-left:20px;
+    padding-right:20px;
+}
+
+/*styling for table rows in webapp*/
+table tr
+{
+    padding-top: 3.2rem;
+}
+
+/*styling for table data in webapp*/
+table td
+{
+    padding-bottom:25px ;
+}
+
+/*styling for chat container div*/
+main .chat
+{
+    display: block;
+    margin-right:auto;
+    margin-left:auto;
+    height: 400px;
+    width: 100%;
+}
+
+/*styling for chad history container*/
+main .chat_body
+{
+    padding-top:5px;
+    margin-right:auto;
+    margin-left:auto;
+    height: 100%;
+    width: 90%;
+}
+
+/*styling for the chad history container to enable scrollability */
+main .scrolling_chat
+{
+    margin: 4px, 4px;
+    padding: 4px;
+    width: 100%;
+    height: 260px;
+    white-space: nowrap;
+    overflow: scroll;
+    text-align: justify;
+}
+
+/*styling for chat input text-box*/
+main .chat_input
+{
+    height: 35px;
+    width: 400px;
+    border:none;
+    outline: none;
+    border-bottom: 1px solid black;
+}
+
+/*styling for the chad history container to enable scrollability */
+main .chat_scroll
+{
+    overflow:hidden;
+    overflow-y: scroll;
+    height: 260px;
+}
+
+/*styling for chat data/history entities */
+main .outer_table tr td
+{
+    padding: 0;
+    width:100%;
+    border-top: 2px solid #DCDCDC;
+}
+
+/*styling for chat container layer 3 div */
+main .outer_table
+{
+    width: 80%;
+    height: 100%;
+    border: 2px double black;
+    box-shadow: 3px 3px 3px 2px #686868;
+}
+
+/*styling for each chat row containg data*/
+main .inner_table
+{
+    width: 100%;
+    height: 100%;
+}
+
+/*styling for the column in the chat row that contains usernames*/
+main .inner_table .col1
+{
+    padding-left: 5px;
+    width: 15%;
+}
+
+/*styling for chat column that contains quotated text from user*/
+main .inner_table .col2
+{
+    width: 85%;
+}
+
+/*styling for first layer div for account form*/
+main .account_box1
+{
+    display: block;
+    height: 400px;
+}
+
+/*styling for second layer div for account form*/
+main .account_box2
+{
+    margin-right: auto;
+    margin-left:auto;
+    border: 2px double black;
+    box-shadow: 3px 3px 3px 2px #686868;
+    width: 350px;
+    height: 100%;
+}
+
+/*styling for first column in account form that holds labels for input text-boxes*/
+main .account_form .col1
+{
+    text-align: left;
+}
+
+/*styling for second column on account form*/
+main .col2 ::placeholder
+{
+    color: black;
+}
+
+/*styling for password form container*/
+main .password_change
+{
+    display: block;
+    height: 280px;
+}
+
+/*styling for password form container*/
+main .password_body
+{
+    margin-right: auto;
+    margin-left:auto;
+    border: 2px double black;
+    box-shadow: 3px 3px 3px 2px #686868;
+    width: 480px;
+    height: 100%;
+    padding-top: 15px;
+}
+
+/*styling for column in password page's form that comtains lables for text-box*/
+main .password_up .col1
+{
+    text-align: left;
+}
+
+/*styling for column in password page's form that comtains input text-box*/
+main .password_up .col2
+{
+    padding-left: 5px;
+}
+
+/*styling for table that contains form elements on password page*/
+main .password_up
+{
+    width: 85%;
+}
+
+/*styling for account form title*/
+main .form_title
+{
+    text-decoration: underline;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+/*styling for flashed error message banner*/
+.error
+{
+    color:red;
+    display:block;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+    background-color: #DC143C;
+    color: white;
+    font-size: 0.99em;
+    box-shadow: 0px 1px 2px #686868;
+    width: 100vw;
+    height: 40px;
+    animation: fade-in 2s ease;
+}
+
+/*creation of fading animation*/
+@keyframes fade-in{
+    0%{
+        opacity: 0;
+    }100%{
+        opacity: 1;
+    }
+
+}
+
+/*styling for text in error message */
+.error h6
+{
+    padding-top: 7px;
+}
